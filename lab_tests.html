@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lab_css.css">
+    <title>Lab Test Form</title>
+</head>
+<body>
+    <div style="float: left; width: 70%;">
+        <h2>Lab Test Form</h2>
+        <form action="submit_form.php" method="post">
+            <h3>Patient Contact Details</h3>
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" name="full_name" required><br>
+
+            <label for="patient_id">Patient ID (if exists):</label>
+            <input type="text" id="patient_id" name="patient_id"><br>
+
+            <label for="contact_number">Contact Number:</label>
+            <input type="text" id="contact_number" name="contact_number" required><br>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <h3>Address</h3>
+            <label for="house_number">House Number:</label>
+            <input type="text" id="house_number" name="house_number" required><br>
+
+            <label for="street">Street:</label>
+            <input type="text" id="street" name="street" required><br>
+
+            <label for="area">Area:</label>
+            <input type="text" id="area" name="area" required><br>
+
+            <label for="district">District:</label>
+            <select id="district" name="district" required>
+                <option value="Choose">Choose</option>
+                <!-- Add other district options here -->
+            </select><br>
+
+            <h3>Choose the Test Type</h3>
+            <label><input type="checkbox" name="test_type[]" value="CBC"> CBC</label><br>
+            <label><input type="checkbox" name="test_type[]" value="Complete Urine"> Complete Urine</label><br>
+            <label><input type="checkbox" name="test_type[]" value="Lipid Profile"> Lipid Profile</label><br>
+            <label><input type="checkbox" name="test_type[]" value="TSH"> Thyroid Stimulating Hormone(TSH)</label><br>
+            <label><input type="checkbox" name="test_type[]" value="Glucose Test"> Glucose Test</label><br>
+
+            <h3>Do you want a hard copy of the report also?</h3>
+            <label><input type="radio" name="hard_copy" value="Yes"> Yes</label><br>
+            <label><input type="radio" name="hard_copy" value="No"> No</label><br>
+
+            <h3>Select Your Comfortable Date and Time</h3>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required><br>
+
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div style="float: right; width: 50%;">
+        <!-- Insert your image here -->
+        <img src="C:\Users\Sudasivamahijan\Desktop\Front_end\Practice\Images fot HTML Assignment-1\Images\Lab-Test\lab-test.jpg" alt="Lab Image" style="position: fixed;">
+    </div>
+</body>
+</html>

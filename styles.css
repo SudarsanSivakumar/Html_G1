@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: red;
+    color: #fff;
+    text-align: right;
+    padding: 10px 0;
+}
+
+header h1 {
+    padding-right: 10px;
+
+}
+
+nav {
+    background-color: #444;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #333;
+}
+
+nav li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background-color 0.3s;
+}
+nav ul li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav ul ul li a {
+    color: steelblue;
+}
+
+/* Styling for the dropdown menus */
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color:#fff;
+    min-width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+/* Hover effect for top-level links */
+nav li:hover > a {
+    background-color: #333;
+}
+
+/* Style for the dropdown links */
+nav ul ul li {
+    position: relative;
+}
+
+nav ul ul li a {
+    padding: 10px;
+}
+
+/* Hover effect for dropdown links */
+nav ul ul li:hover > a {
+    background-color: #333;
+} 
+
+/* Style the main content */
+main {
+    padding: 50px;
+}
+
+/* Style the offer images */
+#offers img {
+    border: 2px solid steelblue;
+    animation: slide 5s infinite alternate;
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
